@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --pink-01: #ce9797;
+    --red-01: #f96262;
+    --gray-01: #413a3a;
+
+    --font-primary: 'Josefin Sans';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--font-primary), Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
