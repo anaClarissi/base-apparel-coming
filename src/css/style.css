@@ -2,6 +2,7 @@
 
 :root {
     --pink-01: #ce9797;
+    --pink-02: #f8bfbf;
     --red-01: #f96262;
     --gray-01: #413a3a;
 
@@ -92,6 +93,14 @@ body {
     width: 100%;
 }
 
+.template_content_main form p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--red-01);
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
 #email {
     width: calc(100% - 60px);
     height: 70px;
@@ -99,12 +108,26 @@ body {
     border-radius: 35px 0 0 35px;
     border: 1px solid var(--pink-01);
     border-right: none;
+    font-size: 1.2rem;
+    outline: none;
     background-color: transparent;
 }
 
 #email::placeholder {
     font-size: 1.2rem;
     color: var(--pink-01);
+}
+
+#email:invalid {
+    border: 3px solid var(--red-01);
+}
+
+.invalid-icon {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    z-index: 20;
 }
 
 #submit-email-btn {
@@ -118,6 +141,11 @@ body {
     cursor: pointer;
     box-shadow: 5px 10px 40px #ce9797a2;
     z-index: 20;
+}
+
+#submit-email-btn:hover {
+    background-image: none;
+    background-color: hsl(0, 80%, 86%);
 }
 
 #submit-email-btn img {
