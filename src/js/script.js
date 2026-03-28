@@ -24,13 +24,9 @@ function validateEmail(email) {
 
 function showErrorMensage() {
 
-    const form = document.querySelector('form');
+    const invalidMsg = document.querySelector('#msg-erro');
 
-    const invalidMsg = document.createElement('p');
-
-    invalidMsg.innerHTML = "Please provide a valid email";
-
-    form.appendChild(invalidMsg);
+    invalidMsg.style.display = "block";
 
 }
 
